@@ -65,7 +65,7 @@ class AttentionLayer(Layer):
                 print('Ua.h>', U_a_dot_h.shape)
 
             """ tanh(S.Wa + hj.Ua) """
-            # <= batch_size*en_seq_len, latent_dim
+#             <= batch_size*en_seq_len, latent_dim
             Ws_plus_Uh = K.tanh(W_a_dot_s + U_a_dot_h)
             if verbose:
                 print('Ws+Uh>', Ws_plus_Uh.shape)
